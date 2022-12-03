@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import Button from '../../UI/Button';
 import Input from '../../UI/Input';
 import classes from './MealItemForm.module.css';
 
@@ -29,6 +30,7 @@ const MealItemForm = (props) => {
             <Input
                 ref={amountInputRef}
                 label="Amount"
+                className={classes.countInputContainer}
                 input={{
                     id: 'amount_' + props.id,
                     type: 'number',
@@ -38,7 +40,7 @@ const MealItemForm = (props) => {
                     defaultValue: '1'
                 }}
             />
-            <button>+ Add</button>
+            <Button small>+ Add</Button>
             {!amountIsValid && (
                 <p>Please enter a valid amount (1-5 permitted).</p>
             )}

@@ -1,4 +1,4 @@
-.input {
+/* .input {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -15,4 +15,36 @@
     border: 1px solid #ccc;
     font: inherit;
     padding-left: 0.5rem;
+} */
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px;
+    width: 100%;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    border-radius: 0.375rem;
+    outline: none;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin: 0 0 8px 0;
+    width: 100%;
+}
+
+.input[type='number'] {
+    padding: 0.5rem;
+}
+
+.error {
+    color: red;
+    margin: 0;
 }

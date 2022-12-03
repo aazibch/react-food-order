@@ -1,0 +1,17 @@
+.form {
+    margin: 1rem;
+    height: 19rem;
+    overflow: auto;
+}
+
+.error {
+    color: #ff0000;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
